@@ -1,5 +1,5 @@
 import { Schema, model } from 'mongoose'
-const commentSchema = newSchema ({
+const commentSchema = new Schema ({
     text:{
         type: String,
         required: true,

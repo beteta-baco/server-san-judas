@@ -30,7 +30,7 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: [true, 'La contraseña es obligatoria'],
-        maxLength: [8, 'La contraseña debe tener al menos 8 caracteres']
+        minLength: [8, 'La contraseña debe tener al menos 8 caracteres']
     },
     profilePicture: { 
         type: String,
